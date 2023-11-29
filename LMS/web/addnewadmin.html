@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/831dcc7bd7.js"
+    crossorigin="anonymous" > </script>
+   
+    <link href="addnewstudent.css" rel="stylesheet" >
+</head>
+<body>
+    <div class="navbar">
+       <div id="menu"  onclick="onclickmenu()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+    </div>
+    <div >
+        
+        <img src="GU-Logo-768x349-1-removebg-preview.webp">
+        </div>
+        <div class="div" onclick="profile()" id="profile">
+          <img src="imagesuraj.jpg.jpg">
+            <a href="#">Profile</a>
+        </div>    
+    </div>
+    <div class="body">
+        <div class="details" id="nav">
+                <div class="d" id="home" onclick="home()" >
+                    <i class="fa-solid fa-home" ></i>
+                    <span>Home</span>
+                </div>
+                <div class="d"  id="waitingstudents" onclick="waitingstudents()">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span>All Waiting Students</span>
+                </div>
+                <div class="d" id="approvedstudents" onclick="approvedstudents()">
+                    <i class="fa-solid fa-circle-user" ></i>
+                    <span>All Approved Students</span>
+                </div>
+                <div class="d"id="allbook" onclick="allbook()">
+                    <i class="fa-solid fa-book" ></i>
+                    <span>All Books in Library</span>
+                </div>
+                <div class="d"id="addbook" onclick="addbook()">
+                    <i class="fa-solid fa-book" ></i>
+                    <span>Add Books</span>
+                </div>
+                <div class="d" id="issuebook" onclick="issuebook()">
+                    <i class="fa-solid fa-book"  ></i>
+                    <span>Issue Book</span>
+                </div>
+                <div class="d">
+                    <i class="fa-solid fa-book" id="returnbook" onclick="returnbook()" ></i>
+                    <span>Return Book</span>
+                </div>
+                <div class="d" id="registerstudent"  onclick="registerstudent()">
+                    <i class="fa-solid fa-circle-user" ></i>
+                    <span>Register A student </span>
+                </div>
+                <div class="d" id="registeradmin" onclick="registeradmin()">
+                    <i class="fa-solid fa-circle-user" ></i>
+        
+                    <span>Register A Admin</span>
+                </div>
+                <div class="d" id="logout" onclick="logout()">
+                    <i class="fas fa-cog" ></i>
+                    <span>Logout</span>
+                </div>
+        </div>
+
+
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+        <div class="details2">
+            <div class="heading">
+                <h1>Library Management System </h1>
+            </div>
+            <div class="sections">
+                    <div class="head">
+                        <h2 style="background-color: brown;">Add New Admin</h2>
+                    </div>
+                    <div class="below">
+                        <form action="addnewadmin" method="post" >
+                            <div class="input-group">
+                                <label for="username">Name:</label>
+                                <input type="text" id="username" name="username1" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="username">ID No.</label>
+                                <input type="text" id="RollNo" name="RollNo1" required>
+                            </div>
+                             <div class="input-group">
+                                <label for="username">Phone no.</label>
+                                <input type="text" id="phone" name="phone1" required>
+                            </div>
+<!--                             <div class="input-group">
+                                <label for="username">Registration</label>
+                                <input type="text" id="registration" name="registration" required>
+                            </div>-->
+                            <div class="input-group gender" style="margin-left: 15px;">
+                                <label for="male">Male</label>
+                                <input type="radio" id="male" name="radio1" value="male"  required>
+                                <label for="Female">Female</label>
+                                <input type="radio" id="female" name="radio1" value="female"  required>
+                                 <!--<span id="togglePassword" onclick="togglePasswordVisibility()">Show</span>--> 
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="Email">Email:</label>
+                                <input type="text" id="Email" name="Email1" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password1" required>
+                                <!-- <span id="togglePassword" onclick="togglePasswordVisibility()">Show</span> -->
+                            </div>
+                            <div class="input-group">
+                                <button type="submit"   class="btn" name="admin_login">Submit</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="admininterface.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+
+/* Reset some default styles for consistency */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile{
+    align-items: center;
+}
+
+.containers {
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    padding: 20px;
+   
+}
+.container {
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.container select{
+    height: 70px; 
+    width: 250px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+   
+ }
+@media (max-width: 850px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* Hamburger menu icon */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+/* Navigation menu for desktop */
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+/* Responsive navigation menu for mobile */
+.nav-menu-mobile {
+    display: none;
+    list-style: none;
+    background-color: #007BFF;
+    padding: 10px;
+}
+
+.nav-menu-mobile.show {
+    display: block;
+}
+
+.nav-menu-mobile li {
+    margin-bottom: 10px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+}

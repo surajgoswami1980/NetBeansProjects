@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/831dcc7bd7.js"
+    crossorigin="anonymous"
+  ></script>
+    <link href="admininterface.css" rel="stylesheet" >
+    <link href="studentdashboard.css" rel="stylesheet" >
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("#menu").click(function(){  
+        $(".hamburger").toggle(); 
+        $(".fa-times").toggle();
+
+    });  
+});  
+</script>  
+</head>
+<body>
+    <div class="navbar">
+       <div id="menu"  onclick="onclickmenu()">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-times"></i>
+
+        </div>
+          <div >
+        
+        <img src="GU-Logo-768x349-1-removebg-preview.webp">
+        </div>
+        <div class="div" onclick="profile()" id="profile">
+          <img src="imagesuraj.jpg.jpg">
+          <a href="#" style="margin-right: 10px">Hi Student </a>
+        </div>    
+    </div>
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+<div class="hamburger">
+    <ul>
+        <li>Home</li>
+        <li>Membership</li>
+        <li>about us</li>
+        <li>Contact Us</li>
+        <li> Log Out</li>
+    </ul>
+</div>
+
+
+
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+        <div class="details2">
+            <div class="heading">
+                <h1>Library Management System </h1>
+            </div>
+            <div class="sections">
+                    <div class="s">
+                        <img src="searchbook.png" >
+                        <a href="#">Search Book</a>
+                    </div>
+                    <div class="s">
+                        
+                        <img src="findissue.webp" alt="">
+                        <a href="#">Find Issue Book</a>
+                    </div>
+                    <div class="s">
+                       
+                        <img src="78-786293_1240-x-1240-0-avatar-profile-icon-png.png" alt="">
+                        <a href="#">Admins Details</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="admininterface.js"></script> -->
+</body>
+</html>

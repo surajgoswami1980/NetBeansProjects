@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+     <link   href="booklist.css" rel="stylesheet" />
+     <script
+     src="https://kit.fontawesome.com/831dcc7bd7.js"
+     crossorigin="anonymous"
+   ></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="containers">
+            <span class="menu-icon" onclick="toggleMobileMenu()">&#9776;</span>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Avilable Books</a></li>
+                <li><a href="#">Issued book</a></li>
+                <li><a href="#">Search book</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>mohit
+            
+        </div>
+        <div class="profile">
+            Profile<i class="fa-solid fa-circle-user" style="margin: 5px;"></i>
+        </div>
+    </div>
+
+    <ul class="nav-menu-mobile" id="mobileMenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Avilable Books</a></li>
+        <li><a href="#">Issued book</a></li>
+        <li><a href="#">Search book</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#"></a>Help</li>
+    </ul>
+
+    <div class="container">
+
+        <div class="box">
+         <H3>COURSE</H3>
+        <select>
+            <option>
+                All
+            </option>
+            <option>
+                B.tech
+            </option>
+            <option>
+                BBA
+            </option>
+            <option>
+                BCA
+            </option>
+         </select>
+        </div>
+        <div class="box">
+<H3> BRANCH</H3>
+         <select>
+            <option>
+                All
+            </option>
+            <option>
+                CSE
+            </option>
+            <option>
+                CIVIL
+            </option>
+            <option>
+                MECHANICAL
+            </option>
+         </select>
+        </div>
+    <div class="box">
+         <H3> YEAR </H3>
+         <select>
+            <option>
+                All
+            </option>
+            <option>
+                1
+            </option>
+            <option>
+                2
+            </option>
+            <option>
+                3
+            </option>
+            <option>
+                4
+            </option>
+         </select>
+        </div>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            var mobileMenu = document.getElementById("mobileMenu");
+            mobileMenu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+
+    <h1>Login Page</h1>
+    
+    <!-- Input fields for username and password -->
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <!-- Login button -->
+    <button id="adminpag">Login</button>
+
+    <script>
+        // Add a click event listener to the login button
+        document.getElementById("adminpag").addEventListener("click", function() {
+            // Get the values entered in the username and password fields
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            // Check if the username and password match the expected values
+            if (username == "suraj" && password == "123456") {
+                // If they match, redirect to the desired page (e.g., Google)
+                window.location.href = "https://www.google.com";
+            } else {
+                // If they don't match, show an alert message
+                alert("Sorry, incorrect username or password");
+            }
+        });
+    </script>
+
+</body>
+</html>

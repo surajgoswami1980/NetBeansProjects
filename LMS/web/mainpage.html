@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+        /* Reset some default styles for consistency */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation bar */
+        .navbar {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hamburger menu icon */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        /* Navigation menu for desktop */
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-menu li {
+            margin-right: 20px;
+        }
+
+        /* Responsive navigation menu for mobile */
+        .nav-menu-mobile {
+            display: none;
+            list-style: none;
+            background-color: #007BFF;
+            padding: 10px;
+        }
+
+        .nav-menu-mobile.show {
+            display: block;
+        }
+
+        .nav-menu-mobile li {
+            margin-bottom: 10px;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <span class="menu-icon" onclick="toggleMobileMenu()">&#9776;</span>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Borrowed Books</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <ul class="nav-menu-mobile" id="mobileMenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Members</a></li>
+        <li><a href="#">Borrowed Books</a></li>
+    </ul>
+
+    <div class="container">
+        <!-- Your library management system content goes here -->
+        <h1>Welcome to the Library Management System</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            var mobileMenu = document.getElementById("mobileMenu");
+            mobileMenu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

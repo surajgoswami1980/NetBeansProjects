@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/831dcc7bd7.js"
+    crossorigin="anonymous"
+  ></script>
+    <link href="profile.css" rel="stylesheet" >
+</head>
+<body>
+    <div class="navbar">
+       <div id="menu"  onclick="onclickmenu()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+    </div>
+    <div >
+        
+        <img src="GU-Logo-768x349-1-removebg-preview.webp">
+        </div>
+        <div class="div" onclick="profile()" id="profile">
+          <img src="imagesuraj.jpg.jpg">
+            <a href="#">Profile</a>
+        </div>    
+    </div>
+    <div class="body">
+        <div class="details" id="nav">
+                <div class="d" id="home" onclick="home()" >
+                    <i class="fa-solid fa-home" ></i>
+                    <span>Home</span>
+                </div>
+                <div class="d"  id="waitingstudents" onclick="waitingstudents()">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span>All Waiting Students</span>
+                </div>
+                <div class="d" id="approvedstudents" onclick="approvedstudents()">
+                    <i class="fa-solid fa-circle-user" ></i>
+                    <span>All Approved Students</span>
+                </div>
+                <div class="d"id="allbook" onclick="allbook()">
+                    <i class="fa-solid fa-book" ></i>
+                    <span>All Books in Library</span>
+                </div>
+                <div class="d"id="addbook" onclick="addbook()">
+                    <i class="fa-solid fa-book" ></i>
+                    <span>Add Books</span>
+                </div>
+                <div class="d" id="issuebook" onclick="issuebook()">
+                    <i class="fa-solid fa-book"  ></i>
+                    <span>Issue Book</span>
+                </div>
+                <div class="d">
+                    <i class="fa-solid fa-book" id="returnbook" onclick="returnbook()" ></i>
+                    <span>Return Book</span>
+                </div>
+                <div class="d" id="registerstudent"  onclick="registerstudent()">
+                    <i class="fa-solid fa-circle-user" ></i>
+                    <span>Register A student </span>
+                </div>
+                <div class="d" id="registeradmin" onclick="registeradmin()">
+                    <i class="fa-solid fa-circle-user" ></i>
+        
+                    <span>Register A Admin</span>
+                </div>
+                <div class="d" id="logout" onclick="logout()">
+                    <i class="fas fa-cog" ></i>
+                    <span>Logout</span>
+                </div>
+        </div>
+
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+        <div class="details2">
+            <div class="heading">
+                <h1>Library Management System </h1>
+            </div>
+            <div class="sections">
+                    <div class="head">
+                        <h1>Your Details</h1>
+                    </div>
+                    <div class="bottom">
+                        <div class="left">
+                            <img src="imagesuraj.jpg.jpg" alt="">
+                            <div class="div">
+                            <h3>GEC2113950</h3>
+                            <H3>SURAJ</H3>
+                            <h5>Roll No : 4921155</h5>
+                        </div>
+                        </div>
+                        <div class="right">
+                            <h5>Phone No. :      8295150083</h5>
+                            <h5>Email : surajgoswami853@gmail.com</h5>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="admininterface.js"></script>
+</body>
+</html>
